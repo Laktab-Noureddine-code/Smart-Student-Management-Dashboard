@@ -1,0 +1,11 @@
+<div>
+  <li class="mb-4">
+    <a
+      [routerLink]="item.path"
+      class="flex items-center gap-3 text-white px-6 py-2 rounded hover:bg-white hover:text-black transition-colors duration-300"
+    >
+      <fa-icon [icon]="item.icon"></fa-icon>
+      {{ item.title }}
+    </a>
+  </li>
+</div>

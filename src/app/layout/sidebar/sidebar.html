@@ -1,0 +1,21 @@
+<div class="fixed min-h-[98vh] min-w-65 rounded-xl p-2 bg-black">
+  <div class="text-white text-2xl font-bold mb-6 text-center">LakTeach</div>
+  <nav class="">
+    <ul class="flex flex-col justify-between">
+      @for (item of routes(); track $index) {
+      <app-links [item]="item"></app-links>
+      }
+      <div>
+        <li class="mt-10">
+          <b
+            (click)="logout()"
+            class="w-full flex items-center gap-3 text-white px-6 py-2 rounded hover:bg-white hover:text-black transition-colors duration-300"
+          >
+            <fa-icon [icon]="faSignOutAlt"></fa-icon>
+            Logout
+          </b>
+        </li>
+      </div>
+    </ul>
+  </nav>
+</div>
