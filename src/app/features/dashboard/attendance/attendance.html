@@ -1,3 +1,16 @@
-<div class="h-66  bg-white rounded-xl p-3">
-<h1 class="text-xl font-medium">Attendance</h1>
+<div class="h-70 bg-white rounded-xl p-3 flex flex-col justify-between border-gray-200 shadow-md">
+  <h1 class="text-xl font-medium mb-4">Attendance</h1>
+  <div class="flex items-center justify-between px-3 ">
+    <p class="flex items-center gap-1"><span class="h-3 w-3 rounded-full bg-[#FAE27C]"></span>20%</p>
+    <p class="flex items-center gap-1"><span class="h-3 w-3 rounded-full bg-[#CFCEFF]"></span>80%</p>
+  </div>
+  <app-charts class="flex-1 min-h-0 display-block" [attendanceData]="attendanceData"/>
+  <div>
+    <div class="">
+        <app-datepicker/>
+    </div>
+    <div>
+
+    </div>
+  </div>
 </div>
